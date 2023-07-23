@@ -3,45 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Music Website</title>
+  <title>My Favorite Songs</title>
   <style>
     /* Add your CSS styling here */
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Music Website</h1>
+    <h1>My Favorite Songs</h1>
   </header>
 
   <main>
-    <!-- Song Upload Form -->
     <section>
-      <h2>Upload Your Favorite Songs</h2>
-      <form action="/upload" method="post" enctype="multipart/form-data">
-        <div>
-          <label for="songTitle">Song Title:</label>
-          <input type="text" id="songTitle" name="songTitle" required>
-        </div>
-        <div>
-          <label for="artist">Artist:</label>
-          <input type="text" id="artist" name="artist" required>
-        </div>
-        <div>
-          <label for="songFile">Choose a Song File:</label>
-          <input type="file" id="songFile" name="songFile" accept=".mp3,.ogg,.wav" required>
-        </div>
-        <div>
-          <input type="submit" value="Upload">
-        </div>
-      </form>
-    </section>
-
-    <!-- List of Uploaded Songs -->
-    <section>
-      <h2>Your Uploaded Songs</h2>
-      <ul id="songList">
-        <!-- Your uploaded songs will be listed here -->
-        <!-- Use server-side logic to fetch and display uploaded songs -->
+      <h2>Important Files</h2>
+      <ul>
+        <li>
+          <a href="path/to/song1.mp3" download>Favorite Song 1</a>
+          <!-- Replace "path/to/song1.mp3" with the actual URL of the first song file -->
+        </li>
+        <li>
+          <a href="path/to/song2.mp3" download>Favorite Song 2</a>
+          <!-- Replace "path/to/song2.mp3" with the actual URL of the second song file -->
+        </li>
+        <!-- Add more songs as needed -->
       </ul>
     </section>
   </main>
