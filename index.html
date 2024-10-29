@@ -1,31 +1,68 @@
+# Why do programmers hate nature? It has too many bugs.
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maverick's Linux Interface</title>
+    <title>Maverick's Digital Odyssey</title>
     <style>
         body {
             background-color: #1e1e1e;
             color: #00ff00;
             font-family: 'Courier New', Courier, monospace;
             padding: 20px;
+            overflow: hidden;
         }
         .command {
             margin: 10px 0;
         }
         .profile-link {
             color: #00ffff;
+            text-decoration: none;
+        }
+        .username {
+            font-size: 18px; /* Adjusted size */
+            animation: typing 4s steps(30, end);
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #00ff00;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .status-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000;
+            color: #00ff00;
+            padding: 10px;
+            text-align: center;
+        }
+        .panel {
+            border: 1px solid #00ff00;
+            padding: 10px;
+            margin: 10px 0;
+            height: 100px;
+        }
+        .input-panel {
+            border: 1px solid #00ff00;
+            padding: 10px;
+            height: 100px;
         }
     </style>
 </head>
 <body>
-    <h1>Maverick's Linux Interface</h1>
-    <div class="command">user@hacker:~$ echo "Siddarth Kumar—red team operative, pentester, and digital ghost. I break systems to make them stronger."</div>
+    <h1>Maverick's Digital Odyssey</h1>
+    <div class="username">Siddarth Kumar</div>
+    <div class="command">user@hacker:~$ echo "Red team operative, pentester, and digital ghost. I break systems to make them stronger."</div>
     <div class="command">user@hacker:~$ whoami</div>
     <div class="command">maverick</div>
-    <div class="command">user@hacker:~$ echo "LinkedIn Profile: <a class='profile-link' href='https://www.linkedin.com/in/siddarth-kumar-476472255'>www.linkedin.com/in/siddarth-kumar-476472255</a>"</div>
-    <div class="command">user@hacker:~$ echo "TryHackMe Profile: <a class='profile-link' href='https://tryhackme.com/r/p/maverick001'>https://tryhackme.com/r/p/maverick001</a>"</div>
+    <div class="command">user@hacker:~$ echo "LinkedIn Profile: <a class='profile-link' href='https://www.linkedin.com/in/siddarth-kumar-476472255'>LinkedIn Profile</a>"</div>
+    <div class="command">user@hacker:~$ echo "TryHackMe Profile: <a class='profile-link' href='https://tryhackme.com/r/p/maverick001'>TryHackMe Profile</a>"</div>
     <div class="command">user@hacker:~$ ls -la</div>
     <div class="command">total 0</div>
     <div class="command">drwxr-xr-x  2 user user 4096 Oct 10 12:00 .</div>
@@ -33,5 +70,22 @@
     <div class="command">-rw-r--r--  1 user user    0 Oct 10 12:00 secret.txt</div>
     <div class="command">user@hacker:~$ cat secret.txt</div>
     <div class="command">"Hacking is not about breaking the law, it's about breaking barriers."</div>
+    <div class="command">user@hacker:~$ echo "Enter your name:"</div>
+
+    <div class="panel input-panel">
+        <h3>Enter Your Name</h3>
+        <input type="text" id="nameInput" placeholder="Your Name">
+        <button onclick="welcomeUser()">Submit</button>
+        <div id="welcomeMessage"></div>
+    </div>
+
+    <div class="status-bar">Connected to the server... Access granted.</div>
+
+    <script>
+        function welcomeUser() {
+            var name = document.getElementById('nameInput').value;
+            document.getElementById('welcomeMessage').innerText = "user@hacker:~$ Welcome, " + name + "!";
+        }
+    </script>
 </body>
 </html>
