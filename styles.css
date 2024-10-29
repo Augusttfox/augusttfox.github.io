@@ -1,6 +1,41 @@
-body{
-  padding: 25px;
+body {
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
 }
-.title {
-	color: #5C6AC4;
+
+h1, h2, h3 {
+    color: green;
+    text-shadow: 2px 2px 5px black;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.container {
+    border: 2px solid green;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.button {
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: darkgreen;
 }
