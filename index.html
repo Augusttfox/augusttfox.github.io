@@ -1,3 +1,5 @@
+# Maverick's Digital Odyssey
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +39,16 @@
 
     <div class="status-bar">Connected to the server... Access granted.</div>
 
-    <script src="script.js"></script>
+    <script>
+        function welcomeUser() {
+            const name = document.getElementById('nameInput').value;
+            const welcomeMessage = document.getElementById('welcomeMessage');
+            if (name) {
+                welcomeMessage.innerHTML = `Welcome, ${name}!`;
+            } else {
+                welcomeMessage.innerHTML = 'Please enter your name.';
+            }
+        }
+    </script>
 </body>
 </html>
