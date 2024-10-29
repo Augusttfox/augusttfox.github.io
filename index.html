@@ -1,57 +1,13 @@
-# Why do programmers hate nature? It has too many bugs.
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maverick's Digital Odyssey</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: #1e1e1e;
-            color: #00ff00;
-            font-family: 'Courier New', Courier, monospace;
-            padding: 20px;
-            overflow: hidden;
-        }
-        .command {
-            margin: 10px 0;
-        }
-        .profile-link {
-            color: #00ffff;
-            text-decoration: none;
-        }
-        .username {
-            font-size: 18px; /* Adjusted size */
-            animation: typing 4s steps(30, end);
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 2px solid #00ff00;
-        }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        .status-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #000;
-            color: #00ff00;
-            padding: 10px;
-            text-align: center;
-        }
-        .panel {
-            border: 1px solid #00ff00;
-            padding: 10px;
-            margin: 10px 0;
-            height: 100px;
-        }
-        .input-panel {
-            border: 1px solid #00ff00;
-            padding: 10px;
-            height: 100px;
+            color: green; /* Brighter text color */
         }
     </style>
 </head>
@@ -81,11 +37,6 @@
 
     <div class="status-bar">Connected to the server... Access granted.</div>
 
-    <script>
-        function welcomeUser() {
-            var name = document.getElementById('nameInput').value;
-            document.getElementById('welcomeMessage').innerText = "user@hacker:~$ Welcome, " + name + "!";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
